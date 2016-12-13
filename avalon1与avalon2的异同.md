@@ -1,7 +1,7 @@
 avalon1与avalon2的异同
 ================
 
-| 科题         | avalon1              | avalon2  |
+| 科题         | avalon1              | avalon2
 | :-------------: |:-----------------| :-----|
 | 如何得知某个属性被改动       | 使用VBScript,Object.defineProperty实现对＝号的重写        | 在此基础增加Proxy的魔术监听 |
 | 如何更新视图     | 找到变动属性对应的订阅者数组，执行这些数组元素的update方法    | 使用vm.$render生成虚拟DOM树，diff,从上到下有序更新 |
